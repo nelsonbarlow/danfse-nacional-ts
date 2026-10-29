@@ -23,7 +23,7 @@ por conta própria. O XML é o documento fiscal; o DANFSe é só a representaç�
 ## Instalação
 
 ```bash
-npm install github:nelsonbarlow/danfse-nacional-ts
+npm install https://github.com/nelsonbarlow/danfse-nacional-ts/releases/download/v0.1.0/danfse-nacional-ts-0.1.0.tgz
 ```
 
 Node.js 20 ou mais novo.

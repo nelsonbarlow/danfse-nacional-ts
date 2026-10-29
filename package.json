@@ -19,7 +19,7 @@
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
     "typecheck": "tsc -p tsconfig.json --noEmit",
-    "prepare": "npm run build"
+    "prepack": "npm run build"
   },
   "keywords": [
     "danfse",
