@@ -1,0 +1,45 @@
+{
+  "name": "danfse-nacional-ts",
+  "version": "0.1.0",
+  "description": "Gera o DANFSe v2.0 (PDF) da NFS-e Nacional a partir do XML, em Node.js/TypeScript. Port do módulo DANFSe do BrazilFiscalReport.",
+  "license": "LGPL-3.0-only",
+  "author": "Nelson Barlow",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "assets",
+    "LICENSE",
+    "NOTICE.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "danfse",
+    "nfse",
+    "nfs-e",
+    "nfse-nacional",
+    "pdf",
+    "nota-fiscal"
+  ],
+  "dependencies": {
+    "@xmldom/xmldom": "^0.9.12",
+    "pdfkit": ">=0.17.2 <1",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@types/pdfkit": "^0.17.0",
+    "@types/qrcode": "^1.5.5",
+    "pdfjs-dist": "^4.10.38",
+    "typescript": "^5.6.0",
+    "vitest": "^4.0.18"
+  }
+}
